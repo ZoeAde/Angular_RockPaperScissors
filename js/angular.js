@@ -1,8 +1,9 @@
 // sample angular code
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['routes']);
 
 app.controller('myController', function($scope) {
+  console.log("controller");
   $scope.player = 0;
   $scope.computer = 0;
   $scope.message = "";
