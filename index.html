@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body ng-controller="myController">
+
+  <div>
+    <button ng-click="play('rock')">Rock</button>
+    <button ng-click="play('paper')">Paper</button>
+    <button ng-click="play('scissors')">Scissors</button>
+  </div>
+  <br>
+  <br>
+  <div>
+    {{ message }}
+  </div>
+  <br>
+  <br>
+  <div>
+    <table>
+      <tr>
+        <td>player</td>
+        <td>computer</td>
+      </tr>
+      <tr>
+        <td>{{ player }}</td>
+        <td>{{ computer}}</td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <button ng-click="resetScore()">Reset Score</button>
+  </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+  </body>
+</html>
